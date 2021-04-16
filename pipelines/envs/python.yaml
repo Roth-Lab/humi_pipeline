@@ -1,0 +1,7 @@
+channels:
+   - conda-forge
+dependencies:
+   - inflection
+   - pandas
+   - plotnine
+   - scipy

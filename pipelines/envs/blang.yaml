@@ -1,0 +1,10 @@
+channels:
+   - conda-forge
+dependencies:
+   - openjdk=8.*
+   - r-dplyr
+   - r-ggplot2
+   - graphviz
+   - inflection
+   - pandas
+   - scipy

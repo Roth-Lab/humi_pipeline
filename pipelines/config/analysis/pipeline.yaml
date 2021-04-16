@@ -1,0 +1,15 @@
+# paths
+comparison_file: comparison.tsv
+data_dir: data
+paths_file: paths.tsv
+out_dir: out
+# Sampling
+burnin: 500
+num_chains: 18
+num_iters: 1000
+num_threads: 4
+# General
+unpack: True
+# Testing
+ci_width: 0.9
+comparison_stat: winsorized-mean

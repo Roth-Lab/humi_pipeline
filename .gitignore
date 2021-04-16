@@ -1,0 +1,3 @@
+*.snakemake*
+examples/output/*
+*.pyc

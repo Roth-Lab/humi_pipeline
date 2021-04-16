@@ -1,0 +1,7 @@
+"group_id"	"sample_id"	"initial_counts_path"	"final_counts_path"
+"C2271x12_rep1"	"C2271x12_rep1"	"initial/signaling_library.csv"	"final/C2271x12_rep1.csv"
+"C2271x12_rep2"	"C2271x12_rep2"	"initial/signaling_library.csv"	"final/C2271x12_rep2.csv"
+"C2271x12_rep3"	"C2271x12_rep3"	"initial/signaling_library.csv"	"final/C2271x12_rep3.csv"
+"C2271x12_group"	"C2271x12_rep1"	"initial/signaling_library.csv"	"final/C2271x12_rep1.csv"
+"C2271x12_group"	"C2271x12_rep2"	"initial/signaling_library.csv"	"final/C2271x12_rep2.csv"
+"C2271x12_group"	"C2271x12_rep3"	"initial/signaling_library.csv"	"final/C2271x12_rep3.csv"

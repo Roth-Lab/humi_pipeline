@@ -1,0 +1,26 @@
+{
+    "__default__":
+    {
+        "mem": "16G"
+    },
+    "build_frequentist_estimate_table":
+    {
+        "mem": "16G"
+    },
+    "build_poset":
+    {
+        "mem": "16G"
+    },
+    "compare_posets":
+    {
+        "mem": "16G"
+    },
+    "fit_humi":
+    {
+        "mem": "16G"
+    },    
+    "preprocess_final_counts":
+    {
+        "mem": "16G"
+    }
+}
