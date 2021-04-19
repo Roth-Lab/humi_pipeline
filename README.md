@@ -1,3 +1,9 @@
+# Replicating the original HUMI manuscript
+
+Details of how to run an example dataset from the manuscript describing the HUMI model are in the `readme.txt` file included in the repository.
+
+General details on how to run and install the pipeline are given below.
+
 # Installation
 
 **1) Install Miniconda**
