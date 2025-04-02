@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
     parser.add_argument("-c", "--num-chains", default=18, type=int)
 
-    parser.add_argument("-n", "--num-iters", default=1000, type=int)
+    parser.add_argument("-n", "--num-iters", default=1999, type=int)
 
     parser.add_argument("-t", "--num-threads", default=1, type=int)
 

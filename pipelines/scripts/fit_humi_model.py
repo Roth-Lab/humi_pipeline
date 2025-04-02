@@ -28,17 +28,18 @@ def main(args):
         "--engine.nPassesPerScan", 1,
         "--engine.nThreads", "Fixed",
         "--engine.nThreads.number", args.num_threads,
-        "--engine.scmInit.temperatureSchedule.threshold", 0.6,
         "--engine.scmInit.nThreads", "Fixed",
         "--engine.scmInit.nThreads.number", args.num_threads,
         "--engine.scmInit.nParticles", 20,
+        "--engine.scmInit.temperatureSchedule", "FixedTemperatureSchedule",
+        "--engine.scmInit.temperatureSchedule.nTemperatures", 1000,
         "--postProcessor", "humi.HumiPostProcessor",
         "--postProcessor.data.targets.name", "sgRNA",
         "--postProcessor.data.genes.name", "gene",
         "--postProcessor.data.experiments.name", "dataset",
         "--postProcessor.data.histograms.name", "histogram",
         "--postProcessor.credibleIntervalPr", args.ci_width,
-        "--postProcessor.runPxviz", "false"
+        "--postProcessor.runPxviz", "false",
     ]
 
     subprocess.run([str(x) for x in cmd], check=True)
@@ -61,8 +62,19 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--out-file", required=True)
 
     parser.add_argument(
-        "-m", "--model",
-        choices=["bnb", "nb", "poi", "ys", "mix-bnb", "mix-bnb-local", "mix-gnb", "mix-nb", "mix-ys"]
+        "-m",
+        "--model",
+        choices=[
+            "bnb",
+            "nb",
+            "poi",
+            "ys",
+            "mix-bnb",
+            "mix-bnb-local",
+            "mix-gnb",
+            "mix-nb",
+            "mix-ys",
+        ],
     )
 
     parser.add_argument("-nc", "--num-chains", default=18, type=int)

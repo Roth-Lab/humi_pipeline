@@ -11,7 +11,7 @@ def main(args):
 
     os.chdir('nowellpack')
 
-    subprocess.run(['git', 'checkout', 'humi-v1.1'])
+    subprocess.run(['git', 'checkout', 'humi-v1.3'])
 
     set_monitor_params(
         'src/main/java/humi/DistributionSummary.xtend', args.truncation_cutoff, args.winsorization_cutoff
